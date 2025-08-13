@@ -4,7 +4,14 @@
 		"name": "Analizador de transistores BJT y MOSFET ",
 		"description": "Este dispositivo permite analizar transistores BJT y MOSFET mediante la utilización de una tarjeta de adquisición de datos NI-USB-6008",
 		"image": "/assets/images/projects/tempmail.best.png",
-		"url": "https://tempmail.best"
+		"url": "https://tempmail.best",
+		"details": {
+			"summary":"Instrumento virtual para caracterizar transistores BJT y MOSFET usando una tarjeta NI USB‑6008 y LabVIEW.",
+			"body": [
+        "Este proyecto permite obtener curvas de operación (Ic vs Vce, etc.) mediante barridos controlados y lectura simultánea de señales analógicas.",
+        "Incluye una PCB de acondicionamiento de señal (etapas de polarización, medición y protección) y una interfaz gráfica en LabVIEW para configurar parámetros y exportar datos."
+      ]
+		}
 
 
 
