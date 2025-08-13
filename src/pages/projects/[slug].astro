@@ -1,17 +1,28 @@
 ---
-import projects from "../../collections/projects.json";
 import Layout from "../../layouts/main.astro";
 
-// 1. Obtenemos el slug desde la URL
-const { slug } = Astro.params;
+/**
+ * 1. Generamos todas las rutas estáticas a partir del JSON.
+ */
+export async function getStaticPaths() {
+  // Import dinámico para que solo se cargue en build
+  const projects = (await import("../../collections/projects.json")).default;
 
-// 2. Buscamos el proyecto cuyo p.slug coincida
-const project = projects.find(p => p.slug === slug);
-
-// 3. Si no existe, redirigimos al listado (luego puedes hacer un 404 personalizado)
-if (!project) {
-  return Astro.redirect("/projects");
+  return projects
+    .filter(p => !!p.slug) // Solo los que tienen slug
+    .map(p => ({
+      params: { slug: p.slug },
+      props: { project: p } // pasamos el objeto como props para no volver a buscar
+    }));
 }
+
+// (Opcional) Aseguramos que esta ruta se pre-renderice (en output static no es obligatorio)
+// export const prerender = true;
+
+/**
+ * 2. Obtenemos el proyecto pasado vía props (proveniente de getStaticPaths).
+ */
+const { project } = Astro.props;
 ---
 
 <Layout title={project.name}>
