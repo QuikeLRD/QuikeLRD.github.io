@@ -1,49 +1,49 @@
 [
-	{
-		"slug": "Analizador de transistores",
-		"name": "Analizador de transistores BJT y MOSFET ",
-		"description": "Este dispositivo permite analizar transistores BJT y MOSFET mediante la utilización de una tarjeta de adquisición de datos NI-USB-6008",
-		"image": "/assets/images/projects/tempmail.best.png",
-		"url": "https://tempmail.best",
-		"details": {
-			"summary":"Instrumento virtual para caracterizar transistores BJT y MOSFET usando una tarjeta NI USB‑6008 y LabVIEW.",
-			"body": [
-        "Este proyecto permite obtener curvas de operación (Ic vs Vce, etc.) mediante barridos controlados y lectura simultánea de señales analógicas.",
-        "Incluye una PCB de acondicionamiento de señal (etapas de polarización, medición y protección) y una interfaz gráfica en LabVIEW para configurar parámetros y exportar datos."
-      ]
-		}
-
-
-
-	},
-	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
-	},
-	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
-	},
-	{
-		"name": "Sink",
-		"description": "A Simple / Speedy / Secure Link Shortener with Analytics.",
-		"image": "/assets/images/projects/sink.cool.png",
-		"url": "https://sink.cool"
-	},
-	{
-		"name": "BroadcastChannel",
-		"description": "Turn your Telegram Channel into a MicroBlog.",
-		"image": "/assets/images/projects/broadcast-channel.png",
-		"url": "https://github.com/ccbikai/BroadcastChannel"
-	},
-	{
-		"name": "L(O*62).ONG",
-		"description": "Make your URL looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger",
-		"image": "/assets/images/projects/long.png",
-		"url": "https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
-	}
+  {
+    "slug": "transistor-analyzer",
+    "internal": true,
+    "name": "Transistor Analyzer (LabVIEW + NI USB‑6008)",
+    "description": "Instrumento virtual para caracterizar BJTs y MOSFETs.",
+    "cover": "/assets/images/projects/transistor-analyzer/cover.jpg",
+    "summary": "Sistema de medición que barre parámetros y obtiene curvas características de transistores usando LabVIEW y una NI USB‑6008.",
+    "gallery": [
+      { "src": "/assets/images/projects/transistor-analyzer/bench.jpg", "alt": "Montaje en el banco de pruebas" },
+      { "src": "/assets/images/projects/transistor-analyzer/ui.png", "alt": "Interfaz LabVIEW" },
+      { "src": "/assets/images/projects/transistor-analyzer/pcb-top.jpg", "alt": "PCB vista superior" }
+    ],
+    "schematics": [
+      { "src": "/assets/images/projects/transistor-analyzer/schematic-main.png", "caption": "Esquemático principal" }
+    ],
+    "pcbViews": [
+      { "src": "/assets/images/projects/transistor-analyzer/pcb-3d.png", "caption": "Render 3D" }
+    ],
+    "bom": [
+      { "qty": 1, "part": "NI USB‑6008 DAQ", "notes": "" },
+      { "qty": 1, "part": "Op-Amp rail-to-rail", "notes": "Amplificación de señal" },
+      { "qty": 1, "part": "Transistor BJT bajo prueba", "notes": "Diversos modelos" }
+    ],
+    "steps": [
+      "Diseño del circuito de polarización y medición.",
+      "Implementación de la interfaz en LabVIEW para controlar barridos.",
+      "Exportación de datos y generación de curvas."
+    ],
+    "technologies": ["LabVIEW", "DAQ", "Instrumentación", "PCB Design"],
+    "links": [
+      { "label": "Repositorio (si aplica)", "url": "https://github.com/QuikeLRD/transistor-analyzer" }
+    ]
+  },
+  {
+    "slug": "dns-surf",
+    "name": "DNS.Surf",
+    "description": "Querying DNS Resolution Results in Different Regions Worldwide.",
+    "image": "/assets/images/projects/dns.surf.png",
+    "externalUrl": "https://dns.surf"
+  },
+  {
+    "slug": "html-zone",
+    "name": "HTML.ZONE",
+    "description": "Web Toolbox.",
+    "image": "/assets/images/projects/html.zone.png",
+    "externalUrl": "https://html.zone"
+  }
 ]
