@@ -1,9 +1,13 @@
 [
 	{
-		"name": "TempMail.Best",
-		"description": "Best Temporary Email.",
+		"slug": "Analizador de transistores",
+		"name": "Analizador de transistores BJT y MOSFET ",
+		"description": "Este dispositivo permite analizar transistores BJT y MOSFET mediante la utilización de una tarjeta de adquisición de datos NI-USB-6008",
 		"image": "/assets/images/projects/tempmail.best.png",
 		"url": "https://tempmail.best"
+
+
+
 	},
 	{
 		"name": "DNS.Surf",
