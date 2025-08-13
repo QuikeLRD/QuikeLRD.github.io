@@ -1,0 +1,32 @@
+---
+import projects from "../../collections/projects.json";
+import PageHeading from "../../components/page-heading.astro";
+import Project from "../../components/project.astro";
+import Layout from "../../layouts/main.astro";
+---
+
+<Layout title="My Projects">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="My Projects"
+      description="Listado de proyectos. Haz clic para ver más detalles."
+    />
+
+    <div class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2">
+      {
+        projects.map(p => {
+          const href = p.slug ? `/projects/${p.slug}` : p.url;
+          return (
+            <Project
+              name={p.name}
+              description={p.description}
+              image={p.image}
+              url={href}
+              internalLink={!!p.slug}
+            />
+          )
+        })
+      }
+    </div>
+  </section>
+</Layout>
