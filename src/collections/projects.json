@@ -1,10 +1,30 @@
 [
   {
-    "slug": "analizador-transistores",
-    "name": "Analizador de transistores BJT y MOSFET",
-    "description": "Instrumento virtual para caracterizar transistores",
-    "image": "/assets/images/projects/tempmail.best.png"
+    "slug": "Transistor Analyzer ",
+    "name": "Transistor Analyzer BJT and MOSFET",
+    "description": "Virtual instrument to characterized BJT and MOSFET transistor through a DAC device",
+    "image": "/assets/images/projects/Analyzer_Transistor/Interface.jpg",
+    "year": 2024,
+    "role": "LabVIEW developer and hardware medition",
+    "technologies": [
+      "LabVIEW",
+      "DAQ",
+      "Analogic Electronic"
+    ],
+     "repo": "https://github.com/QuikeLRD/analizador-transistores",
+    
+      "gallery": [
+      "/assets/images/projects/Analyzer_Transistor/BJT_Analyzer.jpg",
+      "/assets/images/projects/Analyzer_Transistor/BJT_stateMachine.jpg",
+      "/assets/images/projects/Analyzer_Transistor/GetParameters.jpg",
+      "/assets/images/projects/Analyzer_Transistor/Interface.jpg",
+      "/assets/images/projects/Analyzer_Transistor/Mosfet_Analyzer.jpg",
+      "/assets/images/projects/Analyzer_Transistor/State_Machine_main.jpg",
+      "/assets/images/projects/Analyzer_Transistor/SUBVI_BJT.jpg"
+    ]
   },
+     
+  
   {
     "name": "DNS.Surf",
     "description": "Querying DNS Resolution Results in Different Regions Worldwide.",
