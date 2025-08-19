@@ -1,6 +1,6 @@
 [
   {
-    "slug": "Transistor Analyzer ",
+    "slug": "Analyzer_Transistor ",
     "name": "Transistor Analyzer BJT and MOSFET",
     "description": "Virtual instrument to characterized BJT and MOSFET transistor through a DAC device",
     "image": "/assets/images/projects/Analyzer_Transistor/Interface.jpg",
