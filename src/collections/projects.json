@@ -1,18 +1,17 @@
 [
   {
     "slug": "analizador-transistores",
-    "name": "Transistor Analyzer BJT and MOSFET",
-    "description": "Virtual instrument to characterized BJT and MOSFET transistor through a DAC device",
+    "name": "Analizador de transistores BJT y MOSFET",
+    "description": "Se desarrollo un analizador de transistores BJT y MOSFET mediante la utilización de una DAC.",
     "image": "/assets/images/projects/analizador-transistores/Interface.jpg",
     "year": 2024,
     "role": "LabVIEW developer and hardware medition",
     "technologies": [
       "LabVIEW",
       "DAQ",
-      "Analogic Electronic"
+      "Electronica Analógica"
     ],
-     "repo": "https://github.com/QuikeLRD/analizador-transistores",
-    
+         
       "gallery": [
       "/assets/images/projects/analizador-transistores/BJT_Analyzer.jpg",
       "/assets/images/projects/analizador-transistores/BJT_stateMachine.jpg",

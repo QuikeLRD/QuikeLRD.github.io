@@ -12,7 +12,7 @@ keywords:
 
 ## Descripción General
 
-Este proyecto consiste en el desarrollo de un instrumento virtual programado en **LabVIEW** para caracterizar y medir parámetros fundamentales de transistores BJT y MOSFET. El sistema integra hardware de adquisición de datos (DAQ) y una interfaz gráfica que automatiza barridos, cálculos y visualización de curvas.
+Este proyecto consiste en el desarrollo de un instrumento virtual programado en **LabVIEW** para caracterizar y medir parámetros fundamentales de transistores BJT y MOSFET. El sistema integra hardware de adquisición de datos (DAQ) y una interfaz gráfica que automatiza barridos, cálculos y visualización de curvas de caracteristicas de los transistores.
 
 ## ¿Qué resolví?
 
