@@ -23,7 +23,7 @@ const mdModules = import.meta.glob("../../content/projects/*.md", { eager: true 
 let mdModule = null;
 for (const path in mdModules) {
   const mod = mdModules[path];
-  if (mod.frontmatter?.slug === project.slug) {
+  if ((mod as any).frontmatter?.slug === project.slug) {
     mdModule = mod;
     break;
   }
