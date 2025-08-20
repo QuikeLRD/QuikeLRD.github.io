@@ -1,31 +1,70 @@
 ---
 import Layout from "../../layouts/main.astro";
+import Gallery from "../../components/Gallery.astro";
+import TechBadges from "../../components/TechBadges.astro";
 
-/**
- * 1. Generamos todas las rutas estáticas a partir del JSON.
- */
+// Cargar todos los proyectos
 export async function getStaticPaths() {
-  // Import dinámico para que solo se cargue en build
   const projects = (await import("../../collections/projects.json")).default;
-
   return projects
-    .filter(p => !!p.slug) // Solo los que tienen slug
+    .filter(p => !!p.slug)
     .map(p => ({
       params: { slug: p.slug },
-      props: { project: p } // pasamos el objeto como props para no volver a buscar
+      props: { project: p }
     }));
 }
 
-// (Opcional) Aseguramos que esta ruta se pre-renderice (en output static no es obligatorio)
-// export const prerender = true;
-
-/**
- * 2. Obtenemos el proyecto pasado vía props (proveniente de getStaticPaths).
- */
 const { project } = Astro.props;
+
+// Cargar todos los Markdown de proyectos
+const mdModules = import.meta.glob("../../content/projects/*.md", { eager: true });
+
+// Buscar el Markdown que coincida con el slug
+let mdModule = null;
+for (const path in mdModules) {
+  const mod = mdModules[path];
+  if (mod.frontmatter?.slug === project.slug) {
+    mdModule = mod;
+    break;
+  }
+}
+
+const gallery = Array.isArray(project.gallery) ? project.gallery : [];
+const tech = Array.isArray(project.technologies) ? project.technologies : [];
+
+// Metadatos SEO básicos
+const pageTitle = project.name + " | Projects";
+const pageDesc = project.description || mdModule?.frontmatter?.summary || "Proyecto";
+const canonical = `https://quikelrd.github.io/projects/${project.slug}`;
+const cover = project.image || (gallery[0] || "");
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "name": project.name,
+  "headline": project.name,
+  "description": pageDesc,
+  "url": canonical,
+  "image": cover ? [cover] : undefined,
+  "datePublished": project.year ? `${project.year}-01-01` : undefined,
+  "author": { "@type": "Person", "name": "QuikeLRD" },
+  "keywords": mdModule?.frontmatter?.keywords || tech
+};
 ---
 
 <Layout title={project.name}>
+  <head>
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDesc} />
+    <link rel="canonical" href={canonical} />
+    {cover && <meta property="og:image" content={cover} />}
+    <meta property="og:title" content={project.name} />
+    <meta property="og:description" content={pageDesc} />
+    <script type="application/ld+json">
+      {JSON.stringify(schema)}
+    </script>
+  </head>
+
   <section class="max-w-3xl mx-auto my-12 px-6">
     <a href="/projects" class="text-sm text-neutral-500 hover:underline">&larr; Volver</a>
 
@@ -33,6 +72,21 @@ const { project } = Astro.props;
     <p class="mt-4 text-neutral-700 dark:text-neutral-300">
       {project.description}
     </p>
+
+    <TechBadges items={tech} />
+
+    {project.repo && (
+      <p class="mt-4 text-sm">
+        <a
+          class="underline text-blue-600 dark:text-blue-400"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={project.repo}
+        >
+          Repositorio
+        </a>
+      </p>
+    )}
 
     {project.image && (
       <div class="mt-8 rounded-xl overflow-hidden border border-neutral-300 dark:border-neutral-700">
@@ -44,6 +98,18 @@ const { project } = Astro.props;
           decoding="async"
         />
       </div>
+    )}
+
+    {/* Render del contenido extendido (Markdown) */}
+    {mdModule && (
+      <article class="prose dark:prose-invert max-w-none mt-12">
+        <mdModule.Content />
+      </article>
+    )}
+
+    {/* Galería de imágenes */}
+    {gallery.length > 0 && (
+      <Gallery images={gallery} baseAlt={project.name} />
     )}
   </section>
 </Layout>
