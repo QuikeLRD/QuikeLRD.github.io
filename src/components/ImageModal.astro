@@ -1,0 +1,50 @@
+---
+const { src = "", alt = "", show = false, onClose } = Astro.props;
+if (!show) return null;
+---
+<div class="modal-overlay" onClick={onClose}>
+  <div class="modal-content" onClick={e => e.stopPropagation()}>
+    <img src={src} alt={alt} class="modal-img" />
+    <button class="modal-close" onClick={onClose} title="Cerrar">×</button>
+  </div>
+  <style>
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      position: relative;
+      max-width: 90vw;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .modal-img {
+      max-width: 90vw;
+      max-height: 80vh;
+      border-radius: 1rem;
+      box-shadow: 0 0 32px #000a;
+      background: #fff;
+    }
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 18px;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+      padding: 0 8px;
+      z-index: 1100;
+      transition: color 0.2s;
+    }
+    .modal-close:hover { color: #ffd700; }
+  </style>
+</div>

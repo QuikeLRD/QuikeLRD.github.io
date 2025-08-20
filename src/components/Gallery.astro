@@ -1,17 +1,32 @@
 ---
-interface Props {
-  images: string[];
-  title?: string;
-  baseAlt?: string;
+import ImageModal from "./ImageModal.astro";
+
+let modalOpen = false;
+let modalImg = { src: "", alt: "" };
+
+function openModal(src, alt) {
+  modalImg = { src, alt };
+  modalOpen = true;
+  window.dispatchEvent(new CustomEvent('astro:refresh')); // Fuerza el render
 }
-const { images, title = "Galería", baseAlt = "Imagen" } = Astro.props;
-if (!images || images.length === 0) return null;
+function closeModal() {
+  modalOpen = false;
+  window.dispatchEvent(new CustomEvent('astro:refresh'));
+}
+
+const { images, baseAlt = "Imagen" } = Astro.props;
 ---
 <section class="mt-12">
-  <h2 class="text-2xl font-semibold dark:text-white mb-4">{title}</h2>
+  <h2 class="text-2xl font-semibold dark:text-white mb-4">Galería</h2>
   <div class="grid gap-4 sm:grid-cols-2">
     {images.map((src, i) => (
-      <figure class="rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900">
+      <figure
+        class="rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 cursor-pointer hover:shadow-lg"
+        onClick={() => openModal(src, `${baseAlt} ${i + 1}`)}
+        tabindex="0"
+        role="button"
+        aria-label="Ampliar imagen"
+      >
         <img
           src={src}
           alt={`${baseAlt} ${i + 1}`}
@@ -22,4 +37,7 @@ if (!images || images.length === 0) return null;
       </figure>
     ))}
   </div>
+  {modalOpen && (
+    <ImageModal src={modalImg.src} alt={modalImg.alt} show={modalOpen} onClose={closeModal} />
+  )}
 </section>
