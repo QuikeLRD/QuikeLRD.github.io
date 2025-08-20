@@ -11,6 +11,7 @@
       "DAQ",
       "Electronica Analógica"
     ],
+     "repo": "https://github.com/QuikeLRD/analizador-transistores",
          
       "gallery": [
       "/assets/images/projects/analizador-transistores/BJT_Analyzer.jpg",
