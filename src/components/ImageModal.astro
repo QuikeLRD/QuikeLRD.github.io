@@ -1,11 +1,13 @@
 ---
-const { src = "", alt = "", show = false, onClose } = Astro.props;
+const { src = "", alt = "", show = false, modalId = "imgModal" } = Astro.props;
 if (!show) return null;
 ---
-<div class="modal-overlay" onClick={onClose}>
-  <div class="modal-content" onClick={e => e.stopPropagation()}>
+<dialog id={modalId} class="modal-overlay">
+  <div class="modal-content" onclick="event.stopPropagation()">
     <img src={src} alt={alt} class="modal-img" />
-    <button class="modal-close" onClick={onClose} title="Cerrar">×</button>
+    <form method="dialog">
+      <button class="modal-close" title="Cerrar">×</button>
+    </form>
   </div>
   <style>
     .modal-overlay {
@@ -16,6 +18,9 @@ if (!show) return null;
       align-items: center;
       justify-content: center;
       z-index: 1000;
+      border: none;
+      padding: 0;
+      backdrop-filter: blur(2px);
     }
     .modal-content {
       position: relative;
@@ -24,6 +29,7 @@ if (!show) return null;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background: transparent;
     }
     .modal-img {
       max-width: 90vw;
@@ -47,4 +53,5 @@ if (!show) return null;
     }
     .modal-close:hover { color: #ffd700; }
   </style>
-</div>
+</dialog>
+
