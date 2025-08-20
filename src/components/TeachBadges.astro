@@ -1,0 +1,12 @@
+---
+interface Props { items?: string[] }
+const { items = [] } = Astro.props;
+if (!items.length) return null;
+---
+<ul class="flex flex-wrap gap-2 mt-6">
+  {items.map(t => (
+    <li class="text-xs px-2 py-1 rounded-md border border-neutral-300 dark:border-neutral-600 bg-neutral-100 dark:bg-neutral-800 dark:text-neutral-200">
+      {t}
+    </li>
+  ))}
+</ul>
