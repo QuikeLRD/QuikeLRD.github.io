@@ -70,3 +70,6 @@ html.dark {
     transform: translate3d(0, 10, 0)
   }
 }
+.prose-justify p {
+  text-align: justify;
+}
