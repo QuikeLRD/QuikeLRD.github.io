@@ -10,11 +10,11 @@ keywords:
   - mediciones electrónicas
 ---
 
-## ¿Qué hice?
+## ¿Qué se hizo?
 
-Desarrollé un instrumento virtual en **LabVIEW** para automatizar la caracterización y medición de transistores BJT y MOSFET, integrando hardware de adquisición de datos (DAQ) y una interfaz gráfica.
+En colaboración con <a href="https://www.linkedin.com/in/miguel-rendon-marc/" target="_blank" rel="noopener noreferrer">Miguel Abraham</a>, se desarrolló un instrumento virtual en **LabVIEW** orientado a la obtención de parámetros eléctricos y curvas características de transistores BJT y MOSFET. El sistema integra hardware de adquisición de datos (DAQ) y una interfaz gráfica para facilitar la caracterización automatizada y precisa de los dispositivos semiconductores.
 
-## ¿Cómo lo hice?
+## ¿Cómo se hizo?
 
 Programé la arquitectura modular en LabVIEW, implementando barridos automáticos de señal, cálculos de parámetros y visualización de curvas. El sistema controla el hardware DAQ, realiza mediciones simultáneas y exporta resultados en formatos gráficos y CSV.
 
