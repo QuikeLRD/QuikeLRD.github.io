@@ -11,7 +11,7 @@ keywords:
 
 ## ¿Qué hice?
 
-Desarrollé un instrumento virtual en **LabVIEW** para automatizar la caracterización y medición de transistores BJT y MOSFET, integrando hardware de adquisición de datos (DAQ) y una interfaz gráfica.
+Desarrollé en compañia de Miguel Abraham Rendon Chavez un instrumento virtual en **LabVIEW** para automatizar la caracterización y medición de transistores BJT y MOSFET, integrando hardware de adquisición de datos (DAQ) y una interfaz gráfica.
 
 ## ¿Cómo lo hice?
 
