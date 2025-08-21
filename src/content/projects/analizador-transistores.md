@@ -18,6 +18,7 @@ En colaboración con <a href="https://www.linkedin.com/in/miguel-rendon-marc/" t
 
 Se diseñó una arquitectura modular en **LabVIEW**, fundamentada en una máquina de estados orientada a eventos. Esta estructura permitió la implementación de barridos automáticos de señales, el cálculo preciso de parámetros eléctricos y la visualización de curvas características. El sistema gestiona el hardware de adquisición de datos (DAQ), posibilita mediciones simultáneas y exporta los resultados en formatos TDMS para un análisis eficiente y trazabilidad de los datos obtenidos.
 
+## Resultados obtenidos
 
 El sistema desarrollado permite la medición y visualización automática de parámetros fundamentales de transistores BJT, tales como IC, IB, IE, VBE, VCE, ICSAT y HFE, así como la generación de curvas características I-V, incluyendo IC/VCE, IC/VBE y HFE/IC. Para transistores MOSFET, el instrumento facilita la obtención de parámetros como ID, ID_ON, VDS_ON, VGS, VRD, ICSAT y VRDS_ON. El dispositivo proporciona información precisa y confiable para conocer las caracteristicas y propiedades eléctricas reales de distintos transistores para el diseño de diversos circuitos.
 
