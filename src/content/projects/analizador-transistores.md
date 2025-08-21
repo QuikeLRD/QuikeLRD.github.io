@@ -1,3 +1,4 @@
+---
 slug: analizador-transistores
 title: Analizador de transistores BJT y MOSFET
 summary: Instrumento virtual para medición y caracterización de BJT y MOSFET, automatizado en LabVIEW.
