@@ -32,9 +32,11 @@
     "image": "/assets/images/projects/simulacion-automovil/Presentacion.jpg",
     "role": "Hardware designer",
     "technologies": [
-      "FPGA",
-      "QUARTUS II",
-      "Electrónica digital"        
+      "FPGA Cyclone IV",
+      "Quartus",
+      "Diseño digital",
+      "VHDL",
+      "Sensores"          
     ],
     "repo": "https://github.com/QuikeLRD/Automotive-Simulation-System",
   
