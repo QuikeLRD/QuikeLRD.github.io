@@ -25,12 +25,28 @@
     ]
   },
      
+    {
+    "slug": "simulacion-automovil",
+    "name": "Sistema de simulación de un automovil basado en FPGA",
+    "description": "En este proyecto se muestra un sistema encargado del control de diversas funcionalidades electronicas de un automovil utilizando una FPGA como nucleo",
+    "image": "/assets/images/projects/simulacion-automovil/Presentacion.jpg",
+    "role": "Hardware designer",
+    "technologies": [
+      "FPGA",
+      "QUARTUS II",
+      "Electrónica digital"        
+    ],
+    "repo": "https://github.com/QuikeLRD/Automotive-Simulation-System",
   
-  {
-    "name": "DNS.Surf",
-    "description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-    "image": "/assets/images/projects/dns.surf.png",
-    "url": "https://dns.surf"
+    "gallery": [
+      "/assets/images/projects/simulacion-automovil/vistalatera.jpg",
+      "/assets/images/projects/simulacion-automovil/vistasup.jpg",
+      "/assets/images/projects/simulacion-automovil/LuzVerde.jpg",
+      "/assets/images/projects/simulacion-automovil/Lado.jpg",
+      "/assets/images/projects/simulacion-automovil/SensorH.jpg",
+      "/assets/images/projects/simulacion-automovil/ADC.jpg"
+      
+    ]  
   },
   {
     "name": "HTML.ZONE",
