@@ -13,7 +13,8 @@ const { images, baseAlt = "Imagen" } = Astro.props;
   <div class="grid gap-4 sm:grid-cols-2">
     {images.map((src, i) => (
       <figure
-        class="rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 cursor-pointer hover:shadow-lg"
+        class="rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 cursor-pointer hover:shadow-lg  w-[320px] h-[320px] 
+        mx-auto"
         tabindex="0"
         role="button"
         aria-label="Ampliar imagen"
