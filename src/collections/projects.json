@@ -28,7 +28,7 @@
     {
     "slug": "simulacion-automovil",
     "name": "Sistema de simulación de un automovil basado en FPGA",
-    "description": "En este proyecto se muestra un sistema encargado del control de diversas funcionalidades electronicas de un automovil utilizando una FPGA como nucleo",
+    "description": "En este proyecto se muestra un sistema encargado del control de diversas funcionalidades electrónicas de un automóvil utilizando una FPGA como nucleo.",
     "image": "/assets/images/projects/simulacion-automovil/Presentacion.jpg",
     "role": "Hardware designer",
     "technologies": [

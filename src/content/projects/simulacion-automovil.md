@@ -20,4 +20,4 @@ Durante las pruebas se identificaron inconsistencias en la respuesta de los LEDs
 
 ---
 
-> Para una explicación técnica completa y detalles de implementación, consulta la sección documentación.
+> El codigo completo se encuentra en el repositorio al inicio de esta página.
