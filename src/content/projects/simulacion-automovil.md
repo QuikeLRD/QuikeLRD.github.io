@@ -18,6 +18,17 @@ El procedimiento incluyó: instalación y configuración del entorno de diseño,
 El sistema diseñado cumplió con los objetivos de emular funcionalidades clave de un automóvil real dentro de una maqueta digital. Los niveles de iluminación detectados por el LDR se visualizaron correctamente en LEDs gracias al ADC0804, lo que permitió representar en tiempo real las condiciones del entorno. Se logró integrar con éxito los módulos de seguridad (cinturón y punto ciego), las luces automáticas e intermitentes, y el encendido del vehículo.
 Durante las pruebas se identificaron inconsistencias en la respuesta de los LEDs, atribuidas a fluctuaciones en la señal de entrada y a la falta de calibración del divisor de voltaje. No obstante, el diseño resultó válido y funcional, demostrando la viabilidad del enfoque modular en FPGA. Como áreas de mejora, se recomienda realizar calibraciones más precisas, simulaciones más detalladas y optimizar las conexiones para garantizar mayor estabilidad.
 
+
+## Video explicativo
+<iframe 
+  src="https://drive.google.com/file/d/1-myOSlzCtthdc558FpaqiNzpOPKB1PrZ/view?usp=sharing" 
+  width="640" 
+  height="360" 
+  allow="autoplay"
+  allowfullscreen
+></iframe>
+
 ---
 
 > El codigo completo se encuentra en el repositorio al inicio de esta página.
+
