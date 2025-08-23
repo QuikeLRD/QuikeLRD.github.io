@@ -50,11 +50,29 @@
     ]  
   },
   {
-    "name": "HTML.ZONE",
-    "description": "Web Toolbox.",
+    "slug": "blackshadow",
+    "name": "BlackShadow Minisumo autonomo profesional",
+    "description": "Desarrollo de un minisumo autonomo profesional para competencia ",
     "image": "/assets/images/projects/html.zone.png",
-    "url": "https://html.zone"
-  },
+    "technologies": [
+      "Microcontrolador",
+      "Diseño de PCB",
+      "Sensores IR",
+      "Programación en C"          
+    ],
+    "repo": "https://github.com/QuikeLRD/BlackShadow",
+  
+    "gallery": [
+      "/assets/images/projects/simulacion-automovil/vistalatera.jpg",
+      "/assets/images/projects/simulacion-automovil/vistasup.jpg",
+      "/assets/images/projects/simulacion-automovil/LuzVerde.jpg",
+      "/assets/images/projects/simulacion-automovil/Lado.jpg",
+      "/assets/images/projects/simulacion-automovil/SensorH.jpg",
+      "/assets/images/projects/simulacion-automovil/ADC.jpg"
+      
+    ]  
+  },  
+      
   {
     "name": "Sink",
     "description": "A Simple / Speedy / Secure Link Shortener with Analytics.",
