@@ -20,11 +20,13 @@ Durante las pruebas se identificaron inconsistencias en la respuesta de los LEDs
 
 
 ## Video explicativo
-<iframe 
-  src="https://drive.google.com/file/d/1-myOSlzCtthdc558FpaqiNzpOPKB1PrZ/view?usp=sharing" 
-  width="640" 
-  height="360" 
-  allow="autoplay"
+<iframe
+  width="560"
+  height="315"
+  src="https://youtube.com/shorts/HNhlBs4aUqM"
+  title="Video explicativo"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
 ></iframe>
 
