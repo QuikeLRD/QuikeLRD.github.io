@@ -23,13 +23,12 @@ Durante las pruebas se identificaron inconsistencias en la respuesta de los LEDs
 <iframe
   width="560"
   height="315"
-  src="https://youtube.com/shorts/HNhlBs4aUqM"
+  src="https://www.youtube.com/embed/HNhlBs4aUqM"
   title="Video explicativo"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
 ></iframe>
-
 ---
 
 > El codigo completo se encuentra en el repositorio al inicio de esta página.
