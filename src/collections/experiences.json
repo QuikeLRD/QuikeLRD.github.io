@@ -1,17 +1,17 @@
 [
 	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
-		"logo": "/assets/images/experiences/fta.ico"
+		"dates": "January 2021 - Present (Expected Graduation: July 2026)",
+    	"degree": "Bachelor's in Mechatronics Engineering",
+    	"school": "Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas (UPIITA-IPN)",
+    	"location": "Mexico City, Mexico",
+    	"logo": "/assets/images/experiences/UPIITAlogotipo.png"
 	},
 	{
-		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
-		"logo": "/assets/images/experiences/yoho.ico"
+		"dates": "August 2017 - July 2020",
+    	"degree": "Technician in Digital Systems",
+    	"school": "Centro de Estudios Científicos y Tecnológicos 9 \"Juan De Dios Batiz\"",
+    	"location": "Mexico City, Mexico",
+    	"logo": "/assets/images/experiences/Cecyt9.png"
 	},
 	{
 		"dates": "September 2014 · July 2015 ",
