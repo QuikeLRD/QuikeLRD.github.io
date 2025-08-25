@@ -11,22 +11,19 @@ const { logo, dates, role, company, description, degree, school, location } = As
     {dates}
   </p>
 
-  {degree && school && (
-    <h3 class="my-1 text-lg font-bold dark:text-neutral-100">{degree}</h3>
-  )}
-  {school && (
+   {school && (
     <p class="mb-1 text-sm font-medium dark:text-neutral-300">{school}</p>
   )}
+  
+   {degree && (
+    <p class="mb-1 text-sm font-medium dark:text-neutral-300">{school}</p>
+  )}
+  
+    
   {location && (
     <p class="text-xs text-neutral-400 dark:text-neutral-400">{location}</p>
   )}
-  {role && (
-    <h3 class="my-1 text-lg font-bold dark:text-neutral-100">{role}</h3>
-  )}
-  {company && (
-    <p class="mb-1 text-sm font-medium dark:text-neutral-300">{company}</p>
-  )}
-
+  
   <p class="text-sm font-light text-neutral-600 dark:text-neutral-400">
     {description}
   </p>
