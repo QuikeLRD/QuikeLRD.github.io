@@ -9,7 +9,7 @@ import Layout from "../layouts/main.astro";
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
       title="About Me"
-     description="Hola, me llamo Luis Enrique Lerdo soy estudiante del ultimo semestre de ingenieria Mecatrónica en UPIITA-IPN con gran interes en sistemas embebidos, robotica, desarrollo de hardware y productos electronicos."
+      description="Hola, me llamo Luis Enrique Lerdo soy estudiante del ultimo semestre de ingenieria Mecatrónica en UPIITA-IPN con gran interes en sistemas embebidos, robotica, desarrollo de hardware y productos electronicos."
     />
 
     <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
@@ -24,7 +24,7 @@ import Layout from "../layouts/main.astro";
     <h2
       class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
     >
-      Experience
+      Experience & Education
     </h2>
     <div class="px-5 py-10">
       {
@@ -37,6 +37,9 @@ import Layout from "../layouts/main.astro";
                 company={experience.company}
                 description={experience.description}
                 logo={experience.logo}
+                degree={experience.degree}
+                school={experience.school}
+                location={experience.location}
               />
             </div>
           )
