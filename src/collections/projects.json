@@ -53,7 +53,7 @@
     "slug": "blackshadow",
     "name": "BlackShadow Minisumo autonomo profesional",
     "description": "Desarrollo de un minisumo autonomo profesional para competencia ",
-    "image": "/assets/images/projects/html.zone.png",
+    "image": "/assets/images/projects/blackshadow/Frontal.jpg",
     "technologies": [
       "Microcontrolador",
       "Diseño de PCB",
@@ -71,24 +71,7 @@
       "/assets/images/projects/simulacion-automovil/ADC.jpg"
       
     ]  
-  },  
-      
-  {
-    "name": "Sink",
-    "description": "A Simple / Speedy / Secure Link Shortener with Analytics.",
-    "image": "/assets/images/projects/sink.cool.png",
-    "url": "https://sink.cool"
-  },
-  {
-    "name": "BroadcastChannel",
-    "description": "Turn your Telegram Channel into a MicroBlog.",
-    "image": "/assets/images/projects/broadcast-channel.png",
-    "url": "https://github.com/ccbikai/BroadcastChannel"
-  },
-  {
-    "name": "L(O*62).ONG",
-    "description": "Make your URL looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger",
-    "image": "/assets/images/projects/long.png",
-    "url": "https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
-  }
+  }  
+     
+  
 ]
