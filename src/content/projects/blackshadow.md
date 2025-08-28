@@ -6,18 +6,21 @@ summary: El proyecto consistió en el desarrollo de un robot minisumo autónomo,
 
 ## ¿Qué se hizo?
 
-
+El proyecto consistió en el diseño y desarrollo de un robot minisumo autónomo, orientado a la competencia. El objetivo principal fue crear un sistema capaz de detectar oponentes, ejecutar maniobras evasivas y ofensivas, y evitar salir del área de combate mediante sensores de línea. Se buscó implementar una lógica eficiente que permitiera al robot tomar decisiones rápidas y adaptarse a diversas situaciones durante el enfrentamiento.
 
 ## ¿Comó se hizo?
 
-Para llevar a cabo el proyecto se utilizó una tarjeta FPGA Cyclone IV programada en VHDL mediante el software Quartus. El desarrollo se realizó bajo un enfoque modular, dividiendo cada función del automóvil en bloques independientes (encendido, luces, sensores de punto ciego, luces intermitentes, faros, etc).
-El procedimiento incluyó: instalación y configuración del entorno de diseño, definición de entradas y salidas por módulo, programación en VHDL, simulaciones mediante testbench digital, síntesis del diseño y posterior implementación en hardware. Se emplearon sensores como LDR e IR, un ADC0804 para convertir señales analógicas a digitales, y diversos  LEDs y buzzers. Finalmente, se verificó el funcionamiento real mediante pruebas físicas y comparación con las simulaciones, utilizando LEDs indicadores y herramientas de medición básicas.
+Para el desarrollo del proyecto, primero se seleccionaron los componentes electrónicos adecuados para diseñar una tarjeta funcional. El proceso comenzó con la elaboración del diagrama esquemático utilizando el software Proteus. Una vez verificado el correcto funcionamiento del circuito, se procedió al diseño de la PCB en EAGLE, decidiendo emplear una placa de doble capa e incluir algunos componentes SMD con el objetivo de optimizar el espacio.
+
+La PCB fue enviada a fabricación y, tras su entrega, se realizó el proceso de soldadura de cada componente. Durante la etapa inicial se presentaron fallos, por lo que se efectuaron diversas pruebas y correcciones hasta obtener una tarjeta funcional. Posteriormente, se implementó el código previamente desarrollado como parte del proceso de validación.
+
+Una vez comprobado el correcto funcionamiento de la tarjeta, se integraron los sensores y, a través de pruebas continuas en el dojo, se realizaron ajustes al código con el fin de optimizar el desempeño y lograr un minisumo autónomo competitivo.
 
 ## Resultados obtenidos
 
-El sistema diseñado cumplió con los objetivos de emular funcionalidades clave de un automóvil real dentro de una maqueta digital. Los niveles de iluminación detectados por el LDR se visualizaron correctamente en LEDs gracias al ADC0804, lo que permitió representar en tiempo real las condiciones del entorno. Se logró integrar con éxito los módulos de seguridad (cinturón y punto ciego), las luces automáticas e intermitentes, y el encendido del vehículo.
-Durante las pruebas se identificaron inconsistencias en la respuesta de los LEDs, atribuidas a fluctuaciones en la señal de entrada y a la falta de calibración del divisor de voltaje. No obstante, el diseño resultó válido y funcional, demostrando la viabilidad del enfoque modular en FPGA. Como áreas de mejora, se recomienda realizar calibraciones más precisas, simulaciones más detalladas y optimizar las conexiones para garantizar mayor estabilidad.
+El robot minisumo desarrollado cumplió con los objetivos planteados, mostrando capacidad para detectar y atacar rivales, así como para evitar salirse del dojo mediante sus sensores de línea. La lógica de control permitió maniobras rápidas y una alta reactividad ante los cambios en el entorno. Se lograron ejecutar estrategias ofensivas y evasivas, adaptando los tiempos de giro según las condiciones observadas en las pruebas.
 
+El proyecto se pondra a prueba en el torneo Robot Rumble7 este 10 de Octubre en el que se espera desempañar una participación competita y recabar información del combate para futuras mejoras en el prototipo. 
 
 ## Video explicativo
 <iframe
@@ -31,5 +34,5 @@ Durante las pruebas se identificaron inconsistencias en la respuesta de los LEDs
 ></iframe>
 ---
 
-> El codigo completo se encuentra en el repositorio al inicio de esta página.
+> Para ver de forma completa el desarrollo del proyecto, consulta la sección de documentación.
 
