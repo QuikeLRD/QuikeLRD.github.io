@@ -20,7 +20,7 @@ Una vez comprobado el correcto funcionamiento de la tarjeta, se integraron los s
 
 El robot minisumo desarrollado cumplió con los objetivos planteados, mostrando capacidad para detectar y atacar rivales, así como para evitar salirse del dojo mediante sus sensores de línea. La lógica de control permitió maniobras rápidas y una alta reactividad ante los cambios en el entorno. Se lograron ejecutar estrategias ofensivas y evasivas, adaptando los tiempos de giro según las condiciones observadas en las pruebas.
 
-El proyecto se pondra a prueba en el torneo Robot Rumble7 este 10 de Octubre en el que se espera desempañar una participación competita y recabar información del combate para futuras mejoras en el prototipo. 
+El proyecto se pondra a prueba en el torneo Robot Rumble7 este 10 de Octubre en el que se espera desempañar una participación competitiva y recabar información del combate para futuras mejoras en el prototipo. 
 
 ## Video explicativo
 <iframe
