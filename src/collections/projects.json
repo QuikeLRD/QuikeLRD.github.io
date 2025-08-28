@@ -52,7 +52,7 @@
   {
     "slug": "blackshadow",
     "name": "BlackShadow Minisumo autonomo profesional",
-    "description": "Desarrollo de un minisumo autonomo profesional para competencia ",
+    "description": "Desarrollo de un minisumo autonomo profesional para competencia. ",
     "image": "/assets/images/projects/blackshadow/Frontal.jpg",
     "technologies": [
       "Microcontrolador",
@@ -63,12 +63,9 @@
     "repo": "https://github.com/QuikeLRD/BlackShadow",
   
     "gallery": [
-      "/assets/images/projects/simulacion-automovil/vistalatera.jpg",
-      "/assets/images/projects/simulacion-automovil/vistasup.jpg",
-      "/assets/images/projects/simulacion-automovil/LuzVerde.jpg",
-      "/assets/images/projects/simulacion-automovil/Lado.jpg",
-      "/assets/images/projects/simulacion-automovil/SensorH.jpg",
-      "/assets/images/projects/simulacion-automovil/ADC.jpg"
+      "/assets/images/projects/blackshadow/pcb-compo.jpg",
+      "/assets/images/projects/blackshadow/pcb-sola.jpg"
+      
       
     ]  
   }  
