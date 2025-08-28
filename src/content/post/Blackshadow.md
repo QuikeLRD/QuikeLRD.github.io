@@ -72,3 +72,19 @@ De los cinco diodos LED, el D1 se enciende en cuanto la tarjeta recibe alimentac
 En esta etapa se encuentran los conectores destinados a la conexión de los diferentes sensores del minisumo. Para la detección del oponente se emplearon sensores de distancia digitales JS40F, mientras que para la detección de la línea blanca y evitar que el robot salga del dojo se seleccionaron sensores de línea ML1.
 
 Asimismo, se incorporó un conector de VCC y GND con el propósito de alimentar de forma adecuada cada sensor. Durante la fase de desarrollo, el minisumo utiliza un total de tres sensores infrarrojos JS40F para detección de distancia y dos sensores ML1 para la detección de línea.
+
+# **Diseño del PCB**
+
+Una vez verificada la funcionalidad del diagrama esquemático, se implementó el diseño en el software EAGLE. Considerando las restricciones de tamaño para competencias de minisumo (10 cm x 10 cm), se decidió utilizar componentes SMD para reducir el área ocupada por la PCB. Como resultado, la tarjeta tiene dimensiones finales de **6 cm x 4 cm**, lo que permite su instalación horizontal dentro del minisumo y deja espacio libre para otros elementos mecánicos.
+
+La placa está diseñada en **dos capas**, lo que facilita el ruteo de señales y la separación adecuada entre líneas de potencia y señales de control, ayudando a minimizar interferencias y ruido eléctrico.  
+
+La PCB se mando a fabricar en JLCPCB con la finalidad de evitar errores de fabricación y obtener un acabo profesional.
+En las figuras 6 a 8 se presenta la capa inferior y superior de la PCB.
+
+
+# **Programación del microcontrolador**
+
+En el repositorio se muestra el código completo del minisumo el cual fue programado mediante el IDE mikroC PRO for PIC debido a que esta correctamente optimizado para trabajar con microcontroladores PIC de microchip, facilitando la tarea y reduciendo el tiempo.
+
+
