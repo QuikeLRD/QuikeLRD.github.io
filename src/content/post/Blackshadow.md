@@ -7,6 +7,12 @@ dateFormatted: Agosto 28, 2025
 
 # **Diagrama esquemático**
 
+![Diagrama esquemático](../../../public/assets/images/posts/blackshadowD/Schematic.jpg)
+
+<p style="text-align: center; font-style: italic; font-size: 1.05em;">
+Figura 1. Diagrama esquemático de la tarjeta de control del minisumo
+</p>
+
 <div style="text-align: justify; font-size: 1.05em; line-height: 1.8;">
 El diagrama esquemático de la tarjeta de control del minisumo se muestra en la figura 1. Este circuito puede dividirse en cinco etapas principales:
 <br><br>
