@@ -7,28 +7,44 @@ dateFormatted: Agosto 28, 2025
 
 # **Diagrama esquemático**
 
+<div style="text-align: justify; font-size: 1.05em; line-height: 1.8;">
 El diagrama esquemático de la tarjeta de control del minisumo se muestra en la figura 1. Este circuito puede dividirse en cinco etapas principales:
-
-1. **Etapa de potencia:**  
-   Encargada de controlar los actuadores (motores). Incluye el puente H y los componentes necesarios para garantizar el correcto funcionamiento y la entrega de corriente suficiente a los motores.
-
-2. **Etapa de regulación:**  
-   Regula el voltaje de entrada para suministrar una tensión estable de 5V, necesaria para alimentar la lógica y los componentes electrónicos del circuito.
-
-3. **Etapa de control:**  
-   Constituida por el microcontrolador, que actúa como el cerebro del sistema. Procesa las señales provenientes de los sensores, gestiona la lógica de operación y controla los motores.
-
-4. **Etapa de sensado:**  
-   Integrada por sensores infrarrojos y conectores, permite la lectura de diversos periféricos y la detección del entorno, esencial para la toma de decisiones durante la competencia.
-
-5. **Etapa de interfaz de usuario:**  
-   Facilita la comunicación con el operador, mostrando información visual y permitiendo la configuración o indicación de diferentes estados que pueden presentarse a lo largo del combate.
-
+<br><br>
+<ol>
+  <li>
+    <b>Etapa de potencia:</b><br>
+    Encargada de controlar los actuadores (motores). Incluye el puente H y los componentes necesarios para garantizar el correcto funcionamiento y la entrega de corriente suficiente a los motores.
+  </li>
+  <li>
+    <b>Etapa de regulación:</b><br>
+    Regula el voltaje de entrada para suministrar una tensión estable de 5V, necesaria para alimentar la lógica y los componentes electrónicos del circuito.
+  </li>
+  <li>
+    <b>Etapa de control:</b><br>
+    Constituida por el microcontrolador, que actúa como el cerebro del sistema. Procesa las señales provenientes de los sensores, gestiona la lógica de operación y controla los motores.
+  </li>
+  <li>
+    <b>Etapa de sensado:</b><br>
+    Integrada por sensores infrarrojos y conectores, permite la lectura de diversos periféricos y la detección del entorno, esencial para la toma de decisiones durante la competencia.
+  </li>
+  <li>
+    <b>Etapa de interfaz de usuario:</b><br>
+    Facilita la comunicación con el operador, mostrando información visual y permitiendo la configuración o indicación de diferentes estados que pueden presentarse a lo largo del combate.
+  </li>
+</ol>
+<br>
 Cada una de estas etapas cumple una función específica que contribuye al desempeño óptimo y seguro del minisumo durante la competencia.
+</div>
 
-## Etapa de regulación
+## Etapa de Regulación
 
-En esta etapa se localiza la entrada para la alimentación del circuito, dado a que se necesita de una fuente de energía que no requiere conexión directa a AC se optó por usar una bateria lipo de 3s con la capacidad de proporcionar hasta 12.2V cuando estan completamente cargadas, la bateria seleccionada fue TATTU 450 mah 3S, la cual se muestra en la figura 2. Una vez seleccionada la bateria se diseño un circuito para la regulación para ello se utilizo un regulador LM7805 y dos diodos 1N4003 cuya función es proteger al circuito contra la inversión de polaridad de la bateria ademas de proteger al regulador y otros componentes en caso de picos de voltaje. Finalmente en esta etapa se localizan dos capacitores de 100uF cuya función es filtrar el voltaje regulado, eliminando ruidos y pequeñas variacioens, ver figura 3.
+En esta etapa se localiza la entrada para la alimentación del circuito.  
+Dado que se requiere una fuente de energía independiente de la red AC, se optó por utilizar una batería LiPo de **3S**, capaz de proporcionar hasta **12.2 V** cuando está completamente cargada. La batería seleccionada fue el modelo **TATTU 450 mAh 3S**, mostrada en la *Figura 2*.  
+
+Una vez definida la batería, se diseñó el circuito de regulación empleando un **regulador LM7805** y dos **diodos 1N4003**. Estos diodos cumplen la función de proteger el sistema contra inversión de polaridad y de salvaguardar al regulador y demás componentes en caso de picos de voltaje.  
+
+Finalmente, esta etapa incorpora dos **capacitores de 100 µF**, cuya función es filtrar el voltaje regulado, eliminando ruidos y pequeñas variaciones. Véase la *Figura 3*.  
+
 
 ## Etapa de potencia
 
@@ -47,10 +63,12 @@ Sus funciones principales son:
 
 ## Etapa interfaz de usuario
 
-Esta etapa se comforma por 5 diodos leds con sus respectivas resistencias para regular el voltaje que reciben y evitar dañar algun componente, ademas de un dip switch cuya función es ser un medio de control para cada rutina que pueda tener el minisumo, de los 5 diodos leds colocados, D1 se encarga de activarse en cuanto recibe energía la tarjeta siendo de gran utilidad para la prueba de funcionamiento de la misma.
+Esta etapa está conformada por cinco diodos LED con sus respectivas resistencias, las cuales regulan el voltaje recibido para evitar daños en los componentes. Además, incorpora un DIP switch que funciona como medio de control para seleccionar las distintas rutinas que pueda ejecutar el minisumo.
+
+De los cinco diodos LED, el D1 se enciende en cuanto la tarjeta recibe alimentación, lo que resulta de gran utilidad como indicador de encendido y para la verificación inicial del correcto funcionamiento del sistema.
 
 ## Etapa de sensado
 
-En esta etapa se localizan diversos conectores para la utilización de sensores, los sensores utilizados para detectar al oponente fueron JS40F Digital Distance Sensor (figura 4)
-mientras que los seleccionados para detectar linea blanca y evitar salirse del dojo son Micro Line Sensor ML1. Ademas se ha colocado un conector de VCC y GND con la finaliad de alimentar cada sensor utilizado, el minisumo al momento del desarrollo emplea 3 sensores IR para distancia y 2 ML1 de detección de linea.
+En esta etapa se encuentran los conectores destinados a la conexión de los diferentes sensores del minisumo. Para la detección del oponente se emplearon sensores de distancia digitales JS40F, mientras que para la detección de la línea blanca y evitar que el robot salga del dojo se seleccionaron sensores de línea ML1.
 
+Asimismo, se incorporó un conector de VCC y GND con el propósito de alimentar de forma adecuada cada sensor. Durante la fase de desarrollo, el minisumo utiliza un total de tres sensores infrarrojos JS40F para detección de distancia y dos sensores ML1 para la detección de línea.
