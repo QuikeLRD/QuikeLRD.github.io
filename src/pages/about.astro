@@ -33,53 +33,71 @@ import Layout from "../layouts/main.astro";
      Diseño electrónico⚡,Desarrollo de firmware💻, Desarrollo de hardware🔗.
     </p>
 
-        ## HABILIDADES & COMPETENCIAS
+    ## Biografía corta
 
-    <div style="background:#eaeaea; border-radius:20px; padding:22px; border:2px solid #333; display:flex; flex-wrap:wrap; gap:48px;">
+    Diseño electrónico ⚡, Desarrollo de firmware 💻, Desarrollo de hardware🛠️.
+
+    ## HABILIDADES & COMPETENCIAS
+
+    <div style="background: var(--skills-bg, #222); color: var(--skills-fg, #f7f7f7); border-radius:20px; padding:22px; border:2px solid #888; display:flex; flex-wrap:wrap; gap:48px;">
     <div style="flex:1; min-width:220px">
 
-    **Diseño de Circuitos:**
-    - Sistemas mixtos (analógico/digital)
-    - Electrónica automotriz y alta tensión
-    - Simulación en LTspice
-    - Puesta en marcha y depuración de tarjetas
-    - Sensores, DAC/ADC, acondicionamiento de señales
-    - Comunicación: I2C, SPI, UART, CAN
+    **Diseño de Circuitos:**  
+    - Sistemas mixtos (analógico/digital)  
+    - Electrónica automotriz y alta tensión  
+    - Simulación en LTspice  
+    - Puesta en marcha y depuración de tarjetas  
+    - Sensores, DAC/ADC, acondicionamiento de señales  
+    - Comunicación: I2C, SPI, UART, CAN  
 
-    **Diseño/Enrutado de PCB:**
-    - Alta velocidad
-    - Diseño para manufactura
-    - Componentes SMD y THT
+    **Diseño/Enrutado de PCB:**  
+    - Alta velocidad  
+    - Diseño para manufactura  
+    - Componentes SMD y THT  
 
-    **Diseño Mecánico Ligero:**
-    - Modelado CAD en SolidWorks
+    **Diseño Mecánico Ligero:**  
+    - Modelado CAD en SolidWorks  
 
-    **Instrumentación y Medición:**
-    - Osciloscopio, multímetro, generador de funciones, analizador lógico
+    **Instrumentación y Medición:**  
+    - Osciloscopio, multímetro, generador de funciones, analizador lógico  
 
     </div>
     <div style="flex:1; min-width:220px">
 
-    **Firmware:**
-    - Programación en C embebido
-    - Microcontroladores PIC, ARM, Arduino
-    - Programación en VHDL para FPGA
+    **Firmware:**  
+    - Programación en C embebido  
+    - Microcontroladores PIC, ARM, Arduino  
+    - Programación en VHDL para FPGA  
 
-    **Control de Versiones:**
-    - Git / GitHub
+    **Control de Versiones:**  
+    - Git / GitHub  
 
-    **Ensamble/Reparación:**
-    - Soldadura SMD/THT
-    - Fabricación de cableado personalizado
+    **Ensamble/Reparación:**  
+    - Soldadura SMD/THT  
+    - Fabricación de cableado personalizado  
 
-    **Manufactura Electrónica:**
-    - Selección de componentes (BOM)
-    - Trabajo con casas de fabricación
-    - Diseño de pruebas automáticas y procedimientos
-    - Análisis de fallas y mejora continua
+    **Manufactura Electrónica:**  
+    - Selección de componentes (BOM)  
+    - Trabajo con casas de fabricación  
+    - Diseño de pruebas automáticas y procedimientos  
+    - Análisis de fallas y mejora continua  
 
     </div>
     </div>
+
+    <style>
+    /* Fondo y texto adaptables para modo claro/oscuro */
+    :root {
+      --skills-bg: #f7f7f7;
+      --skills-fg: #222;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --skills-bg: #222;
+        --skills-fg: #f7f7f7;
+      }
+    }
+    </style>
         
     <h2
       class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
