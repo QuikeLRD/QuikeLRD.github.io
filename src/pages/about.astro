@@ -22,62 +22,62 @@ import Layout from "../layouts/main.astro";
     <p class="mb-4 text-justify text-gray-600 dark:text-neutral-400">
       Disfruto enfrentar el reto de llevar el código más allá de la simulación en entornos de desarrollo y hacerlo funcionar en hardware real, adaptando, probando y resolviendo problemas hasta obtener un sistema confiable y funcional.
     </p>
-    <p class="mb-4 text-justify text-gray-600 dark:text-neutral-400">
+    <p class="mb-12 text-justify text-gray-600 dark:text-neutral-400">
       Mi objetivo profesional es construir una carrera en el área de sistemas embebidos y electrónica de diseño, contribuyendo al desarrollo de tecnologías innovadoras en robótica, automatización y productos inteligentes.
     </p>
     <img src="/assets/images/experiences/caos.jpg" class="relative z-30 w-full my-10 rounded-xl" />
 
     <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Biografía corta</h2>
-    <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+    <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg mb-10">
       Diseño electrónico ⚡, Desarrollo de firmware 💻, Desarrollo de hardware 🔗.
     </p>
 
-    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Habilidades y Competencias</h2>
-    <div style="background: var(--skills-bg, #222); color: var(--skills-fg, #f7f7f7); border-radius:20px; padding:32px 36px; border:2px solid #888; display: flex; flex-wrap: wrap; gap: 48px;">
+    <h2 class="mb-6 text-2xl font-bold dark:text-neutral-200">Habilidades y Competencias</h2>
+    <div style="background: var(--skills-bg, #222); color: var(--skills-fg, #f7f7f7); border-radius:20px; padding:40px 38px; border:2px solid #888; display: flex; flex-wrap: wrap; gap: 48px;">
       <div style="flex:1; min-width:260px; margin-right:24px">
-        <h3 style="margin-top:0.5em;margin-bottom:0.5em;">Diseño de circuitos</h3>
-        <ul style="margin-bottom:1.3em;">
+        <h3 class="skills-cat">Diseño de circuitos</h3>
+        <ul class="skills-list">
           <li>Conocimiento de electrónica analógica y digital</li>
           <li>Teoría de circuitos electrónicos</li>
           <li>Diseño de circuitos lógicos</li>
           <li>Simulación y análisis en Proteus 8, Multisim</li>
         </ul>
-        <h3 style="margin-top:0.5em;margin-bottom:0.5em;">Firmware y programación de microcontroladores</h3>
-        <ul style="margin-bottom:1.3em;">
+        <h3 class="skills-cat">Firmware y programación de microcontroladores</h3>
+        <ul class="skills-list">
           <li>Programación en C y C++</li>
           <li>Manejo de interrupciones, Timers, ADC y protocolos de comunicación</li>
           <li>Microcontroladores: PIC, Arduino, ESP32, AVR</li>
           <li>mikroC PRO for PIC, MPLAB, Arduino IDE</li>
           <li>Programación en VHDL para FPGA</li>
         </ul>
-        <h3 style="margin-top:0.5em;margin-bottom:0.5em;">Simulación, análisis y control</h3>
-        <ul style="margin-bottom:1.3em;">
+        <h3 class="skills-cat">Simulación, análisis y control</h3>
+        <ul class="skills-list">
           <li>Programación en LabVIEW</li>
           <li>Matlab y Simulink</li>
         </ul>
-        <h3 style="margin-top:0.5em;margin-bottom:0.5em;">Control de Versiones</h3>
-        <ul style="margin-bottom:1.3em;">
+        <h3 class="skills-cat">Control de Versiones</h3>
+        <ul class="skills-list">
           <li>Git / GitHub</li>
         </ul>
       </div>
       <div style="flex:1; min-width:260px;">
-        <h3 style="margin-top:0.5em;margin-bottom:0.5em;">Diseño de PCB</h3>
-        <ul style="margin-bottom:1.3em;">
+        <h3 class="skills-cat">Diseño de PCB</h3>
+        <ul class="skills-list">
           <li>EAGLE, Altium Designer</li>
           <li>Componentes SMD / THT</li>
         </ul>
-        <h3 style="margin-top:0.5em;margin-bottom:0.5em;">Ensamble/Reparación</h3>
-        <ul style="margin-bottom:1.3em;">
+        <h3 class="skills-cat">Ensamble/Reparación</h3>
+        <ul class="skills-list">
           <li>Soldadura SMD/THT</li>
           <li>Montaje y diagnóstico de prototipos</li>
         </ul>
-        <h3 style="margin-top:0.5em;margin-bottom:0.5em;">Instrumentación y Medición</h3>
-        <ul style="margin-bottom:1.3em;">
+        <h3 class="skills-cat">Instrumentación y Medición</h3>
+        <ul class="skills-list">
           <li>Osciloscopio, multímetro, generador de funciones, fuentes</li>
           <li>Pruebas de hardware</li>
         </ul>
-        <h3 style="margin-top:0.5em;margin-bottom:0.5em;">Diseño mecánico</h3>
-        <ul style="margin-bottom:1.3em;">
+        <h3 class="skills-cat">Diseño mecánico</h3>
+        <ul class="skills-list">
           <li>Autodesk Inventor</li>
           <li>SolidWorks</li>
         </ul>
@@ -87,15 +87,33 @@ import Layout from "../layouts/main.astro";
       :root {
         --skills-bg: #f7f7f7;
         --skills-fg: #222;
+        --skills-accent: #3b82f6; /* Indigo-500 from Tailwind, visible in ambos modos */
       }
       @media (prefers-color-scheme: dark) {
         :root {
           --skills-bg: #222;
           --skills-fg: #f7f7f7;
+          --skills-accent: #60a5fa; /* Indigo-400 for dark mode */
         }
       }
+      .skills-cat {
+        font-size: 1.13rem;
+        font-weight: 700;
+        color: var(--skills-accent);
+        margin-top: 1.5em;
+        margin-bottom: 0.3em;
+        letter-spacing: 0.02em;
+      }
+      .skills-cat:first-child {
+        margin-top: 0;
+      }
+      .skills-list {
+        margin-bottom: 1.3em;
+        margin-left: 0;
+        padding-left: 1.1em;
+        list-style-type: disc;
+      }
       @media (max-width: 900px) {
-        /* En pantallas pequeñas, usa una sola columna */
         div[style*="flex-wrap"] {
           flex-direction: column !important;
           gap: 0 !important;
