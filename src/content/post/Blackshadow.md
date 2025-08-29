@@ -7,7 +7,9 @@ dateFormatted: Agosto 28, 2025
 
 # **Diagrama esquemático**
 
-![Diagrama esquemático](/assets/images/posts/blackshadowD/Schematic.png)
+<a href="/assets/images/posts/blackshadowD/Schematic.png" target="_blank">
+  <img src="/assets/images/posts/blackshadowD/Schematic.png" alt="Diagrama esquemático" style="max-width: 100%; height: auto;">
+</a>
 
 <p style="text-align: center; font-style: italic; font-size: 1.05em;">
 Figura 1. Diagrama esquemático de la tarjeta de control del minisumo
