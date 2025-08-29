@@ -111,7 +111,7 @@ Dado que se requiere una fuente de energía independiente de la red AC, se optó
 
 Una vez definida la batería, se diseñó el circuito de regulación empleando un **regulador LM7805** y dos **diodos 1N4003**. Estos diodos cumplen la función de proteger el sistema contra inversión de polaridad y de salvaguardar al regulador y demás componentes en caso de picos de voltaje.  
 
-Finalmente, esta etapa incorpora dos **capacitores de 100 µF**, cuya función es filtrar el voltaje regulado, eliminando ruidos y pequeñas variaciones. Véase la *Figura 3*.  
+Finalmente, esta etapa incorpora dos **capacitores de 100 µF**, cuya función es filtrar el voltaje regulado, eliminando ruidos y pequeñas variaciones.
 
 
 ## Etapa de potencia
@@ -137,19 +137,54 @@ De los cinco diodos LED, el D1 se enciende en cuanto la tarjeta recibe alimentac
 
 ## Etapa de sensado
 
-En esta etapa se encuentran los conectores destinados a la conexión de los diferentes sensores del minisumo. Para la detección del oponente se emplearon sensores de distancia digitales JS40F, mientras que para la detección de la línea blanca y evitar que el robot salga del dojo se seleccionaron sensores de línea ML1.
+<div>
+  <img src="/assets/images/posts/blackshadowD/SensorIR.jpg" alt="Sensor infrarrojo JS40F utilizado en el minisumo"
+    style="max-width: 100%; height: auto; cursor: zoom-in;"
+    onclick="openLightbox(this.src, this.alt);">
+  <p style="text-align: center; font-style: italic; font-size: 1.05em;">
+    Figura 3. Sensor infrarrojo JS40F utilizado en el minisumo
+  </p>
+</div>
+
+En esta etapa se encuentran los conectores destinados a la conexión de los diferentes sensores del minisumo. Para la detección del oponente se emplearon sensores de distancia digitales JS40F (figura 3), mientras que para la detección de la línea blanca y evitar que el robot salga del dojo se seleccionaron sensores de línea ML1.
 
 Asimismo, se incorporó un conector de VCC y GND con el propósito de alimentar de forma adecuada cada sensor. Durante la fase de desarrollo, el minisumo utiliza un total de tres sensores infrarrojos JS40F para detección de distancia y dos sensores ML1 para la detección de línea.
 
 # **Diseño del PCB**
+
+<div>
+  <img src="/assets/images/posts/blackshadowD/PCB_layout.jpg" alt="Vista general del diseño de PCB" 
+    style="max-width: 100%; height: auto; cursor: zoom-in;" 
+    onclick="openLightbox(this.src, this.alt);">
+  <p style="text-align: center; font-style: italic; font-size: 1.05em;">
+    Figura 4. Vista general del diseño de PCB
+  </p>
+</div>
 
 Una vez verificada la funcionalidad del diagrama esquemático, se implementó el diseño en el software EAGLE. Considerando las restricciones de tamaño para competencias de minisumo (10 cm x 10 cm), se decidió utilizar componentes SMD para reducir el área ocupada por la PCB. Como resultado, la tarjeta tiene dimensiones finales de **6 cm x 4 cm**, lo que permite su instalación horizontal dentro del minisumo y deja espacio libre para otros elementos mecánicos.
 
 La placa está diseñada en **dos capas**, lo que facilita el ruteo de señales y la separación adecuada entre líneas de potencia y señales de control, ayudando a minimizar interferencias y ruido eléctrico.  
 
 La PCB se mando a fabricar en JLCPCB con la finalidad de evitar errores de fabricación y obtener un acabo profesional.
-En las figuras 6 a 8 se presenta la capa inferior y superior de la PCB.
+En las figuras 3 a 5 se presenta la capa inferior y superior de la PCB.
 
+<div>
+  <img src="/assets/images/posts/blackshadowD/BottomLayout.jpg" alt="Capa inferior de la PCB" 
+    style="max-width: 100%; height: auto; cursor: zoom-in;" 
+    onclick="openLightbox(this.src, this.alt);">
+  <p style="text-align: center; font-style: italic; font-size: 1.05em;">
+    Figura 5. Capa inferior de la PCB
+  </p>
+</div>
+
+<div>
+  <img src="/assets/images/posts/blackshadowD/TopLayout.jpg" alt="Capa superior de la PCB" 
+    style="max-width: 100%; height: auto; cursor: zoom-in;" 
+    onclick="openLightbox(this.src, this.alt);">
+  <p style="text-align: center; font-style: italic; font-size: 1.05em;">
+    Figura 6. Capa superior de la PCB
+  </p>
+</div>
 
 # **Programación del microcontrolador**
 
