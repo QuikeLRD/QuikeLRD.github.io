@@ -20,8 +20,6 @@ Se diseñó una arquitectura modular en **LabVIEW**, fundamentada en una máquin
 
 ## Resultados obtenidos
 
-El sistema desarrollado permite la medición y visualización automática de parámetros fundamentales de transistores BJT, tales como IC, IB, IE, VBE, VCE, ICSAT y HFE, así como la generación de curvas características I-V, incluyendo IC/VCE, IC/VBE y HFE/IC. Para transistores MOSFET, el instrumento facilita la obtención de parámetros como ID, ID_ON, VDS_ON, VGS, VRD, ICSAT y VRDS_ON. El dispositivo proporciona información precisa y confiable para conocer las caracteristicas y propiedades eléctricas reales de distintos transistores para el diseño de diversos circuitos.
+El sistema desarrollado permite la medición y visualización automática de parámetros fundamentales de transistores BJT, tales como IC, IB, IE, VBE, VCE, ICSAT y HFE, así como la generación de curvas características I-V, incluyendo IC/VCE, IC/VBE y HFE/IC. Para transistores MOSFET, el instrumento facilita la obtención de parámetros como ID, ID_ON, VDS_ON, VGS, VRD, ICSAT y VRDS_ON. El dispositivo proporciona información precisa y confiable para conocer las características y propiedades eléctricas reales de distintos transistores para el diseño de diversos circuitos.
 
 ---
-
-> Para una explicación técnica completa y detalles de implementación, consulta la sección documentación.
