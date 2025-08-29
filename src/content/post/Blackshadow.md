@@ -98,7 +98,7 @@ Cada una de estas etapas cumple una función específica que contribuye al desem
 ## Etapa de Regulación
 
 <div>
-  <img src="/assets/images/posts/blackshadowD/Bateria.jpg" alt="Batería LiPo TATTU 450 mAh 3S" 
+  <img src="/assets/images/posts/blackshadowD/Bateria.png" alt="Batería LiPo TATTU 450 mAh 3S" 
     style="max-width: 100%; height: auto; cursor: zoom-in;" 
     onclick="openLightbox(this.src, this.alt);">
   <p style="text-align: center; font-style: italic; font-size: 1.05em;">
