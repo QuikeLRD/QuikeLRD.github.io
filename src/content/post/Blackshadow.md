@@ -7,13 +7,51 @@ dateFormatted: Agosto 28, 2025
 
 # **Diagrama esquemático**
 
-<a href="/assets/images/posts/blackshadowD/Schematic.png" target="_blank">
-  <img src="/assets/images/posts/blackshadowD/Schematic.png" alt="Diagrama esquemático" style="max-width: 100%; height: auto;">
-</a>
+<!-- Lightbox Modal para la imagen -->
+<style>
+.lightbox-bg {
+  display: none;
+  position: fixed;
+  z-index: 9000;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox-bg.active { display: flex; }
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 7px;
+  box-shadow: 0 0 25px #000;
+}
+.lightbox-close {
+  position: absolute;
+  top: 30px; right: 40px;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  padding: 0.1em 0.4em;
+  transition: background 0.2s;
+}
+.lightbox-close:hover { background: #e00; }
+</style>
 
-<p style="text-align: center; font-style: italic; font-size: 1.05em;">
-Figura 1. Diagrama esquemático de la tarjeta de control del minisumo
-</p>
+<div>
+  <img src="/assets/images/posts/blackshadowD/Schematic.png" alt="Diagrama esquemático" style="max-width: 100%; height: auto; cursor: zoom-in;" onclick="document.getElementById('lightbox1').classList.add('active');">
+  <p style="text-align: center; font-style: italic; font-size: 1.05em;">
+    Figura 1. Diagrama esquemático de la tarjeta de control del minisumo
+  </p>
+</div>
+
+<!-- Lightbox Modal HTML -->
+<div id="lightbox1" class="lightbox-bg" onclick="this.classList.remove('active')">
+  <span class="lightbox-close" onclick="document.getElementById('lightbox1').classList.remove('active'); event.stopPropagation();">&times;</span>
+  <img src="/assets/images/posts/blackshadowD/Schematic.png" class="lightbox-img" alt="Diagrama esquemático en grande">
+</div>
 
 <div style="text-align: justify; font-size: 1.05em; line-height: 1.8;">
 El diagrama esquemático de la tarjeta de control del minisumo se muestra en la figura 1. Este circuito puede dividirse en cinco etapas principales:
@@ -94,5 +132,3 @@ En las figuras 6 a 8 se presenta la capa inferior y superior de la PCB.
 # **Programación del microcontrolador**
 
 En el repositorio se muestra el código completo del minisumo el cual fue programado mediante el IDE mikroC PRO for PIC debido a que esta correctamente optimizado para trabajar con microcontroladores PIC de microchip, facilitando la tarea y reduciendo el tiempo.
-
-
