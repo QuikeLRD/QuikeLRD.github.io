@@ -5,8 +5,13 @@ description: En este proyecto se presenta el desarrollo de un robot minisumo.
 dateFormatted: Agosto 28, 2025
 ---
 
-<!-- Lightbox Modal global (solo una vez al inicio) -->
+<!-- Lightbox Modal global (solo una vez al inicio) y justificado global -->
 <style>
+body, .markdown, .post-content, main, article, #content, #main-content, .astro-content {
+  text-align: justify !important;
+  font-size: 1.05em;
+  line-height: 1.8;
+}
 .lightbox-bg {
   display: none;
   position: fixed;
@@ -66,9 +71,8 @@ function closeLightbox(event) {
   </p>
 </div>
 
-<div style="text-align: justify; font-size: 1.05em; line-height: 1.8;">
 El diagrama esquemático de la tarjeta de control del minisumo se muestra en la figura 1. Este circuito puede dividirse en cinco etapas principales:
-<br><br>
+
 <ol>
   <li>
     <b>Etapa de potencia:</b><br>
@@ -91,9 +95,8 @@ El diagrama esquemático de la tarjeta de control del minisumo se muestra en la 
     Facilita la comunicación con el operador, mostrando información visual y permitiendo la configuración o indicación de diferentes estados que pueden presentarse a lo largo del combate.
   </li>
 </ol>
-<br>
+
 Cada una de estas etapas cumple una función específica que contribuye al desempeño óptimo y seguro del minisumo durante la competencia.
-</div>
 
 ## Etapa de Regulación
 
