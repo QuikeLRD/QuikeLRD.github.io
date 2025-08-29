@@ -85,6 +85,54 @@ Cada una de estas etapas cumple una función específica que contribuye al desem
 
 ## Etapa de Regulación
 
+<!-- Lightbox Modal para la imagen de la batería -->
+<style>
+.lightbox-bg2 {
+  display: none;
+  position: fixed;
+  z-index: 9000;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox-bg2.active { display: flex; }
+.lightbox-img2 {
+  max-width: 70vw;
+  max-height: 65vh;
+  border-radius: 7px;
+  box-shadow: 0 0 25px #000;
+}
+.lightbox-close2 {
+  position: absolute;
+  top: 30px; right: 40px;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  padding: 0.1em 0.4em;
+  transition: background 0.2s;
+}
+.lightbox-close2:hover { background: #e00; }
+</style>
+
+<div>
+  <img src="/assets/images/posts/blackshadowD/Bateria.jpg" alt="Batería LiPo TATTU 450 mAh 3S" 
+    style="max-width: 100%; height: auto; cursor: zoom-in;" 
+    onclick="document.getElementById('lightbox2').classList.add('active');">
+  <p style="text-align: center; font-style: italic; font-size: 1.05em;">
+    Figura 2. Batería LiPo TATTU 450 mAh 3S utilizada en el minisumo
+  </p>
+</div>
+
+<!-- Lightbox Modal HTML -->
+<div id="lightbox2" class="lightbox-bg2" onclick="this.classList.remove('active')">
+  <span class="lightbox-close2" onclick="document.getElementById('lightbox2').classList.remove('active'); event.stopPropagation();">&times;</span>
+  <img src="/assets/images/posts/blackshadowD/Bateria.jpg" class="lightbox-img2" alt="Batería LiPo en grande">
+</div>
+
 En esta etapa se localiza la entrada para la alimentación del circuito.  
 Dado que se requiere una fuente de energía independiente de la red AC, se optó por utilizar una batería LiPo de **3S**, capaz de proporcionar hasta **12.2 V** cuando está completamente cargada. La batería seleccionada fue el modelo **TATTU 450 mAh 3S**, mostrada en la *Figura 2*.  
 
