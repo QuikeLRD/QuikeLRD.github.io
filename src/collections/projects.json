@@ -9,6 +9,9 @@
     "technologies": [
       "LabVIEW",
       "DAQ",
+      "BJT",
+      "MOSFET",
+      "Instrumentación",      
       "Electronica Analógica"
     ],
       
@@ -31,10 +34,11 @@
     "image": "/assets/images/projects/simulacion-automovil/Presentacion.jpg",
     "role": "Hardware designer",
     "technologies": [
-      "FPGA Cyclone IV",
+      "FPGA",
       "Quartus",
-      "Diseño digital",
+      "Ciclone IV",
       "VHDL",
+      "Diseño digital",
       "Sensores"          
     ],
     "repo": "https://github.com/QuikeLRD/Automotive-Simulation-System",
@@ -55,10 +59,13 @@
     "description": "Desarrollo de un minisumo autonomo profesional para competencia. ",
     "image": "/assets/images/projects/blackshadow/Frontal.jpg",
     "technologies": [
-      "Microcontrolador",
-      "Diseño de PCB",
-      "Sensores IR",
-      "Programación en C"          
+      "PIC",
+      "mikroC",
+      "EAGLE",
+      "PROTEUS",      
+      "Sensor IR",   
+      "Diseño de PCB" 
+
     ],
     "repo": "https://github.com/QuikeLRD/BlackShadow",
   
