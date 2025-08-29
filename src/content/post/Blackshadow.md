@@ -121,7 +121,9 @@ Finalmente, esta etapa incorpora dos **capacitores de 100 µF**, cuya función e
 
 ## Etapa de potencia
 
-Esta etapa se encarga de recibir señales de control del microcontrolador para decidir el sentido de giro y la velocidad de los motores, proporciona suficiente corriente y voltaje a los motores que el microcontrolador no puede entregar directamente, se selecciono el DRV8871 como driver de control de cada motor gracias a su capacidad para manejar hasta 3.6A de corriente y su amplio rango de voltaje el cual va desde 6.5V hasta 45V, de igual forma en el datasheet del componente se nos indica que se debe colocar una resistencia de 15Khz entre su pin ILIM y GND con la finalidad de limitar la corriente. Como recomendación se debe aislar la etapa de potencia de la de control mediante opto acopladores con la finalidad de evitar ruidos e interferencia que se pueda presentar en el futuro.
+## Etapa de potencia
+
+Esta etapa se encarga de recibir señales de control del microcontrolador para decidir el sentido de giro y la velocidad de los motores, proporciona suficiente corriente y voltaje a los motores que el microcontrolador no puede entregar directamente, se seleccionó el [DRV8871](https://www.ti.com/product/DRV8871?utm_source=google&utm_medium=cpc&utm_campaign=asc-null-null-GPN_EN-cpc-pf-google-ww_en_cons&utm_content=DRV8871&ds_k=DRV8871&DCM=yes&gclsrc=aw.ds&gad_source=1&gad_campaignid=14388345080&gbraid=0AAAAAC068F0xJ3rT1tbuoAwJrG_XxBSnj&gclid=Cj0KCQjw_L_FBhDmARIsAItqgt6wGQYhOLwpQqJVhBRKdZShbvXQu-KxwfCC6zK3k0wVsP65_sEquZAaAmG3EALw_wcB#tech-docs) como driver de control de cada motor gracias a su capacidad para manejar hasta 3.6A de corriente y su amplio rango de voltaje el cual va desde 6.5V hasta 45V, de igual forma en el datasheet del componente se nos indica que se debe colocar una resistencia de 15Khz entre su pin ILIM y GND con la finalidad de limitar la corriente. Como recomendación se debe aislar la etapa de potencia de la de control mediante opto acopladores con la finalidad de evitar ruidos e interferencia que se pueda presentar en el futuro.
 
 ## Etapa de control
 
@@ -193,6 +195,7 @@ En las figuras 3 a 5 se presenta la capa inferior y superior de la PCB.
 
 # **Programación del microcontrolador**
 
-En el repositorio se muestra el código completo del minisumo el cual fue programado mediante el IDE mikroC PRO for PIC debido a que esta correctamente optimizado para trabajar con microcontroladores PIC de microchip, facilitando la tarea y reduciendo el tiempo.
+# **Programación del microcontrolador**
 
+En el [repositorio](https://github.com/QuikeLRD/BlackShadow) se muestra el código completo del minisumo el cual fue programado mediante el IDE mikroC PRO for PIC debido a que está correctamente optimizado para trabajar con microcontroladores PIC de microchip, facilitando la tarea y reduciendo el tiempo.
 </div>
