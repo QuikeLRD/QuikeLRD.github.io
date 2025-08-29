@@ -4,7 +4,6 @@ title: BlackShadow "Desarrollo de un robot minisumo autonomo profesional"
 description: En este proyecto se presenta el desarrollo de un robot minisumo.
 dateFormatted: Agosto 28, 2025
 ---
-
 # **Diagrama esquemático**
 
 <!-- Lightbox Modal para la imagen -->
@@ -41,7 +40,9 @@ dateFormatted: Agosto 28, 2025
 </style>
 
 <div>
-  <img src="/assets/images/posts/blackshadowD/Schematic.png" alt="Diagrama esquemático" style="max-width: 100%; height: auto; cursor: zoom-in;" onclick="document.getElementById('lightbox1').classList.add('active');">
+  <img src="/assets/images/posts/blackshadowD/Schematic.png" alt="Diagrama esquemático" 
+    style="max-width: 100%; height: auto; cursor: zoom-in;" 
+    onclick="document.getElementById('lightbox1').classList.add('active');">
   <p style="text-align: center; font-style: italic; font-size: 1.05em;">
     Figura 1. Diagrama esquemático de la tarjeta de control del minisumo
   </p>
