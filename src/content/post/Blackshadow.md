@@ -7,8 +7,8 @@ dateFormatted: Agosto 28, 2025
 
 <!-- Lightbox Modal global (solo una vez al inicio) y justificado global -->
 <style>
-body, .markdown, .post-content, main, article, #content, #main-content, .astro-content {
-  text-align: justify !important;
+.justificado {
+  text-align: justify;
   font-size: 1.05em;
   line-height: 1.8;
 }
@@ -59,6 +59,8 @@ function closeLightbox(event) {
   <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
   <img id="lightbox-img" class="lightbox-img" src="" alt="">
 </div>
+
+<div class="justificado">
 
 # **Diagrama esquemático**
 
@@ -192,3 +194,5 @@ En las figuras 3 a 5 se presenta la capa inferior y superior de la PCB.
 # **Programación del microcontrolador**
 
 En el repositorio se muestra el código completo del minisumo el cual fue programado mediante el IDE mikroC PRO for PIC debido a que esta correctamente optimizado para trabajar con microcontroladores PIC de microchip, facilitando la tarea y reduciendo el tiempo.
+
+</div>
