@@ -22,16 +22,20 @@ El robot minisumo desarrollado cumplió con los objetivos planteados, mostrando 
 
 El proyecto se pondra a prueba en el torneo Robot Rumble7 este 10 de Octubre en el que se espera desempañar una participación competitiva y recabar información del combate para futuras mejoras en el prototipo. 
 
-## Video explicativo
+
+## Videos del funcionamiento
 <iframe
   width="560"
   height="315"
-  src="https://www.youtube.com/embed/HNhlBs4aUqM"
+  src="https://www.youtube.com/embed/_lvOW-Cvddo"
   title="Video explicativo"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-></iframe>
+  allowfullscreen>
+</iframe>
+<p style="text-align: center; font-style: italic; font-size: 1.05em;">
+  Prueba de detección de línea.
+</p>
 ---
 
 > Para ver de forma completa el desarrollo del proyecto, consulta la sección de documentación.
