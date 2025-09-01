@@ -28,6 +28,6 @@ Durante las pruebas se identificaron inconsistencias en la respuesta de los LEDs
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
 ></iframe>
----
+
 
 > El código completo se encuentra en el repositorio al inicio de esta página.
