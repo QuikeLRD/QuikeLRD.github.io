@@ -6,7 +6,7 @@ summary: En este proyecto se presenta el desarrollo de un sistema de simulación
 
 ## ¿Qué se hizo?
 
-A lo largo del proyecto trabajé en equipo con [Jesús Adrián](https://www.linkedin.com/in/jes%C3%BAs-adri%C3%A1n-mondragon-ledesma-b683701a2/) con el objetivo de desarrollar un sistema de simulación automotriz sobre FPGA que integrara funciones modernas de un vehículo real, como encendido y apagado, luces interiores y exteriores, sensores de seguridad (cinturón y punto ciego), faros automáticos mediante LDR, limpiaparabrisas sensibles a humedad, indicadores en LEDs y buzzer de alerta, así como sensores ultrasónicos para maniobras de reversa.
+A lo largo del proyecto trabajé en equipo con [Adrián Mondragon](https://www.linkedin.com/in/jes%C3%BAs-adri%C3%A1n-mondragon-ledesma-b683701a2/) con el objetivo de desarrollar un sistema de simulación automotriz sobre FPGA que integrara funciones modernas de un vehículo real, como encendido y apagado, luces interiores y exteriores, sensores de seguridad (cinturón y punto ciego), faros automáticos mediante LDR, limpiaparabrisas sensibles a humedad, indicadores en LEDs y buzzer de alerta, así como sensores ultrasónicos para maniobras de reversa.
 
 ## ¿Cómo se hizo?
 

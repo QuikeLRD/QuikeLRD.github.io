@@ -12,7 +12,7 @@ keywords:
 
 ## ¿Qué se hizo?
 
-En colaboración con <a href="https://www.linkedin.com/in/miguel-rendon-marc/" target="_blank" rel="noopener noreferrer">Miguel Abraham</a>, se desarrolló un instrumento virtual en **LabVIEW** orientado a la obtención de parámetros eléctricos y curvas características de transistores BJT y MOSFET. El sistema integra hardware de adquisición de datos (DAQ) y una interfaz gráfica para facilitar la caracterización automatizada y precisa de los dispositivos semiconductores.
+En colaboración con <a href="https://www.linkedin.com/in/miguel-rendon-marc/" target="_blank" rel="noopener noreferrer">Miguel Rendon</a>, se desarrolló un instrumento virtual en **LabVIEW** orientado a la obtención de parámetros eléctricos y curvas características de transistores BJT y MOSFET. El sistema integra hardware de adquisición de datos (DAQ) y una interfaz gráfica para facilitar la caracterización automatizada y precisa de los dispositivos semiconductores.
 
 ## ¿Cómo se hizo?
 
