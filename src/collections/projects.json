@@ -57,7 +57,7 @@
     "slug": "blackshadow",
     "name": "BlackShadow Minisumo autonomo profesional",
     "description": "Desarrollo de un minisumo autonomo profesional para competencia. ",
-    "image": "/assets/images/projects/blackshadow/Frontal.jpg",
+    "image": "/assets/images/projects/blackshadow/chasis.jpg",
     "technologies": [
       "PIC",
       "mikroC",
